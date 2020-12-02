@@ -28,4 +28,8 @@ jobs:
       run: ./gradlew test
     - name: Running with Gradle
       run: ./gradlew run
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Package
+        path: build/libs
 
